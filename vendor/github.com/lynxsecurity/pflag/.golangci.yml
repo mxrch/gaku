@@ -1,0 +1,33 @@
+run:
+  timeout: 15m
+  tests: true
+
+linters:
+  enable:
+    - gofmt
+    - goheader
+    - goimports
+    - gosimple
+    - govet
+    - misspell
+  disable:
+    - errcheck
+
+issues:
+  exclude-rules:
+    # Exclude some linters from running on tests files.
+    - path: _test\.go
+      linters:
+        - deadcode
+        - staticcheck
+        - unused
+        - varcheck
+    - path: doc.go
+      linters:
+        - goheader
+
+linters-settings:
+  goheader:
+    template: |-
+        Use of this source code is governed by a BSD-style
+        license that can be found in the LICENSE file.

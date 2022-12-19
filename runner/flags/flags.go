@@ -4,17 +4,18 @@ import (
 	"crypto/tls"
 	"flag"
 	"fmt"
-	"github.com/lc/gau/v2/pkg/providers"
-	"github.com/lynxsecurity/pflag"
-	"github.com/lynxsecurity/viper"
-	log "github.com/sirupsen/logrus"
-	"github.com/valyala/fasthttp"
-	"github.com/valyala/fasthttp/fasthttpproxy"
 	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
 	"time"
+
+	"github.com/lynxsecurity/pflag"
+	"github.com/lynxsecurity/viper"
+	"github.com/mxrch/gaku/v2/pkg/providers"
+	log "github.com/sirupsen/logrus"
+	"github.com/valyala/fasthttp"
+	"github.com/valyala/fasthttp/fasthttpproxy"
 )
 
 type URLScanConfig struct {

@@ -3,13 +3,14 @@ package runner
 import (
 	"context"
 	"fmt"
-	"github.com/lc/gau/v2/pkg/providers"
-	"github.com/lc/gau/v2/pkg/providers/commoncrawl"
-	"github.com/lc/gau/v2/pkg/providers/otx"
-	"github.com/lc/gau/v2/pkg/providers/urlscan"
-	"github.com/lc/gau/v2/pkg/providers/wayback"
-	"github.com/sirupsen/logrus"
 	"sync"
+
+	"github.com/mxrch/gaku/v2/pkg/providers"
+	"github.com/mxrch/gaku/v2/pkg/providers/commoncrawl"
+	"github.com/mxrch/gaku/v2/pkg/providers/otx"
+	"github.com/mxrch/gaku/v2/pkg/providers/urlscan"
+	"github.com/mxrch/gaku/v2/pkg/providers/wayback"
+	"github.com/sirupsen/logrus"
 )
 
 type Runner struct {

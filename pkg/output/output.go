@@ -1,12 +1,13 @@
 package output
 
 import (
-	jsoniter "github.com/json-iterator/go"
-	"github.com/valyala/bytebufferpool"
 	"io"
 	"net/url"
 	"path"
 	"strings"
+
+	jsoniter "github.com/json-iterator/go"
+	"github.com/valyala/bytebufferpool"
 )
 
 type JSONResult struct {
@@ -39,7 +40,7 @@ func WriteURLs(writer io.Writer, results <-chan string, blacklistMap map[string]
 			if _, ok := lastURL[u.Host+u.Path]; ok {
 				continue
 			} else {
-				lastURL[u.Host+u.Path] = struct{}{} ;
+				lastURL[u.Host+u.Path] = struct{}{}
 			}
 
 		}

@@ -1,4 +1,4 @@
-module github.com/lc/gau/v2
+module github.com/mxrch/gaku/v2
 
 go 1.17
 

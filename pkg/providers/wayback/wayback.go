@@ -3,9 +3,10 @@ package wayback
 import (
 	"context"
 	"fmt"
+
 	jsoniter "github.com/json-iterator/go"
-	"github.com/lc/gau/v2/pkg/httpclient"
-	"github.com/lc/gau/v2/pkg/providers"
+	"github.com/mxrch/gaku/v2/pkg/httpclient"
+	"github.com/mxrch/gaku/v2/pkg/providers"
 	"github.com/sirupsen/logrus"
 )
 

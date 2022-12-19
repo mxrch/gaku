@@ -2,13 +2,14 @@ package main
 
 import (
 	"bufio"
-	"github.com/lc/gau/v2/pkg/output"
-	"github.com/lc/gau/v2/runner"
-	"github.com/lc/gau/v2/runner/flags"
-	log "github.com/sirupsen/logrus"
 	"io"
 	"os"
 	"sync"
+
+	"github.com/mxrch/gaku/v2/pkg/output"
+	"github.com/mxrch/gaku/v2/runner"
+	"github.com/mxrch/gaku/v2/runner/flags"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
