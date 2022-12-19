@@ -13,7 +13,7 @@ builds:
     ignore:
       - goos: darwin
         goarch: 386
-    main: ./cmd/gau/
+    main: ./cmd/gaku/
 archives:
   - id: tgz
     format: tar.gz

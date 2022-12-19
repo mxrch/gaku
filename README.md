@@ -57,7 +57,7 @@ An example configuration file can be found [here](https://github.com/mxrch/gaku/
 ## Installation:
 ### From source:
 ```
-$ go install github.com/mxrch/gaku/v2/cmd/gau@latest
+$ go install github.com/mxrch/gaku/v2/cmd/gaku@latest
 ```
 
 ### From binary:
